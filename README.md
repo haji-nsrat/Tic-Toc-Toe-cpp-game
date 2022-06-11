@@ -1,8 +1,8 @@
 # Tic-Toc-Toe-cpp-game
 
 My first ever game, first cpp game, using only cpp.
-The game have 2 modes play with computer and multiplyer.
-Any C++ compiler will run this code, i run it with gcc \n
+The game have 2 modes play with computer and multiplyer.<br/>
+Any C++ compiler will run this code, i run it with gcc
 but you can use visual studio if you want or any compiler in the web 
 just copy the code and paste it and it will work :)
 
