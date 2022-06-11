@@ -9,4 +9,4 @@ Start Page:
 Game:
 ![Alt text](https://github.com/haji-nsrat/Tic-Toc-Toe-cpp-console-game/blob/master/game.2.PNG)
 
-[<img src="https://github.com/haji-nsrat/Tic-Toc-Toe-cpp-console-game/blob/master/game.2.PNG" width="100" />]
+<img src="https://github.com/haji-nsrat/Tic-Toc-Toe-cpp-console-game/blob/master/game.2.PNG" width="50%" />
