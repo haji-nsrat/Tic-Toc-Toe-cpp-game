@@ -7,6 +7,7 @@
 #include <ctime>
 #include <conio.h>
 #include <string>
+//#include <limits>
 
 using std::cin;
 using std::cout;
@@ -20,12 +21,12 @@ public:
 	bool gameOver = true;
 	std::string res;
 
-	void draw();
-	bool map_is_full();
-	void you_play();
-	void player_2();
-	void game_play();
-	void check_who_won();
+	void draw();		  // Draw the map
+	bool map_is_full();	  // see if map is full ?
+	void you_play();	  // main player move
+	void player_2();	  // second player move
+	void game_play();	  // computer move
+	void check_who_won(); // check the result
 };
 
 void XO::draw()
@@ -49,9 +50,15 @@ bool XO::map_is_full()
 }
 void XO::you_play()
 {
-	cout << " Input 1 to 9 or a location not\n already Inputed, Play: ";
+	cout << " Input a number from location 1 to 9\n \"O\" Play: ";
 	int pos = 0;
 	cin >> pos;
+	while (!cin >> pos)
+	{
+		cout << " You entered a character !!!!!\n";
+		cin.clear();
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	}
 	--pos;
 	if ((pos >= 0 && pos < 9) && map[pos] != 'O' && map[pos] != 'X')
 		map[pos] = 'O';
@@ -60,9 +67,15 @@ void XO::you_play()
 }
 void XO::player_2()
 {
-	cout << " Input 1 to 9 or a location not\n already Inputed, Play: ";
+	cout << " Input a number from location 1 to 9\n \"X\" Play: ";
 	int pos = 0;
 	cin >> pos;
+	while (!cin >> pos)
+	{
+		cout << " You entered a character !!!!!\n";
+		cin.clear();
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	}
 	--pos;
 	if ((pos >= 0 && pos < 9) && map[pos] != 'O' && map[pos] != 'X')
 		map[pos] = 'X';
