@@ -1,5 +1,5 @@
 // this game is made by Hajy_Nsrat, only using C++ .
-// this is my first game ever, more then one year of programming .
+// this is my first game ever.
 // please try it and have fun .
 
 #include <iostream>
